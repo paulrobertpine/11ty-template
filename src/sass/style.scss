@@ -1,0 +1,15 @@
+$clr-primary: #2328c0;
+$clr-secondary: aliceblue;
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: $clr-primary;
+  color: white;
+}
+
+main {
+  background-color: $clr-secondary;
+}
