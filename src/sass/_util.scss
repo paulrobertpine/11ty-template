@@ -1,0 +1,19 @@
+@use "theme" as *;
+
+/* 
+* begin local customization 
+*/
+
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+.reading {
+  margin: 0 auto;
+  max-width: $reading-width;
+}
+
+.pad {
+  padding: 1rem;
+}

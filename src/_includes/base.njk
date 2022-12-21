@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,17 @@
         <link rel="stylesheet" href={{ "css/style.css" | url }}>
         <title>{{ title }}</title>
     </head>
+
     <body>
-        <header>
+        <header id="site-header" class="pad">
             <h1>{{ title }}</h1>
         </header>
-        <main>
+        <main id="site-main" class="container pad">
             {{ content | safe }}
         </main>
+        <footer id="site-footer" class="pad">
+            <p>&copy; YYYY</p>
+        </footer>
     </body>
+
 </html>
