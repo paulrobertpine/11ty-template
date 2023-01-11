@@ -3,13 +3,18 @@ title: Hello 11ty
 layout: "base.njk"
 ---
 
-![a cat](./img/cat.jpg)
+<!-- ![a cat](./img/cat.jpg) -->
 
 <section class="reading">
 
-Here is a paragraph. More stuff. Please [see this link](https://google.ca) for things.
+Here is a paragraph. Please [see this link](https://google.ca) for things.
 
 ## Heading Two
+
+<div x-data="{ count: 0 }">
+    <button x-on:click="count++">Increment</button>
+    <span x-text="count"></span>
+</div>
 
 Here is paragraph two. Some **bold text** is here oh yeah.
 
