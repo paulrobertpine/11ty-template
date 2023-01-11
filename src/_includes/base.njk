@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ metadata.language }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href={{
+      "css/style.css" | url
+    }}>
+    <script src="/js/alpine.js" defer></script>
+    <title>{{ title }} | {{ metadata.sitetitle }}</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href={{ "css/style.css" | url }}>
-        <script src="/js/alpine.js" defer></script>
-        <title>{{ title }}</title>
-    </head>
-
-    <body>
-        <header id="site-header" class="pad">
-            <h1>{{ title }}</h1>
-        </header>
-        <main id="site-main" class="container pad">
-            {{ content | safe }}
-        </main>
-        <footer id="site-footer" class="pad">
-            <p>&copy; YYYY</p>
-        </footer>
-    </body>
-
+  <body>
+    <header id="site-header" class="pad">
+      <a id="site-title" href="/">{{ metadata.sitetitle }}</a>
+    </header>
+    <main id="site-main" class="container pad">
+      <section class="reading">
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+      </section>
+    </main>
+    <footer id="site-footer" class="pad">
+      <p>&copy; YYYY</p>
+    </footer>
+  </body>
 </html>

@@ -5,8 +5,6 @@ layout: "base.njk"
 
 <!-- ![a cat](./img/cat.jpg) -->
 
-<section class="reading">
-
 Here is a paragraph. Please [see this link](https://google.ca) for things.
 
 ## Heading Two
@@ -41,5 +39,3 @@ Here is a nested unordered list:
   - clementines
   - nectarines
 - bananas
-
-</section>

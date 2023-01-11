@@ -7,3 +7,25 @@ html {
 body {
   font-family: sans-serif;
 }
+
+h1,
+h2,
+h3 {
+  color: $clr-primary;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: $clr-primary;
+}
