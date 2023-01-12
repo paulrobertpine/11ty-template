@@ -1,6 +1,12 @@
-$clr-primary: hsl(238, 60%, 45%);
-$clr-secondary: hsl(238, 60%, 90%);
-
+// layout
 $max-width: 1200px;
 $reading-width: 700px;
 $min-width: 300px;
+
+// colours
+$clr-primary: hsl(238, 60%, 45%);
+$clr-bg: hsl(0, 0%, 90%);
+$clr-text: hsl(0, 0%, 20%);
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");

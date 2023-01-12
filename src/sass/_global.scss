@@ -5,25 +5,21 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  color: $clr-primary;
+  color: $clr-text;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  border-bottom: 1px solid $clr-bg;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 a {

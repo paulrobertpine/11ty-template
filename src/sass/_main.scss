@@ -1,6 +1,10 @@
 @use "theme" as *;
 
 #site-main {
+  a {
+    font-weight: bold;
+  }
+
   img {
     max-width: 100%;
   }
