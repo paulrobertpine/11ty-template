@@ -3,6 +3,7 @@
 #site-header {
   background-color: $clr-primary;
   color: white;
+  justify-content: space-between;
 
   a {
     color: white;
@@ -12,5 +13,29 @@
   #site-title {
     font-size: 1.6rem;
     font-weight: bold;
+  }
+
+  #site-menu {
+    button {
+      @include breakpoint($header-min) {
+        display: none;
+      }
+    }
+
+    ol {
+      list-style: none;
+
+      li {
+        a {
+          padding: 0.5rem 1rem;
+          font-weight: bold;
+          display: flex;
+
+          &:hover {
+            background-color: red;
+          }
+        }
+      }
+    }
   }
 }

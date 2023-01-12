@@ -2,11 +2,32 @@
 $max-width: 1200px;
 $reading-width: 700px;
 $min-width: 300px;
+$header-min: 460px;
 
 // colours
-$clr-primary: hsl(238, 60%, 45%);
+$clr-primary: hsl(230, 70%, 30%);
 $clr-bg: hsl(0, 0%, 90%);
 $clr-text: hsl(0, 0%, 20%);
 
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+$font-min: 14px;
+$font-max: 18px;
+
+// mixins
+@mixin breakpoint($pixels) {
+  @media only screen and (min-width: $pixels) {
+    @content;
+  }
+}
+
+@mixin fluid-type {
+  font-size: calc(
+    #{$font-min} + #{strip-unit($font-max - $font-min)} *
+      ((100vw - #{$min-width}) / #{strip-unit($max-width - $min-width)})
+  );
+}
+
+@function strip-unit($value) {
+  @return calc($value / 1px);
+}

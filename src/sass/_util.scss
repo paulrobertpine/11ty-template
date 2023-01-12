@@ -13,3 +13,13 @@
 .pad {
   padding: 1rem;
 }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.debug {
+  border: 1px solid red;
+}
