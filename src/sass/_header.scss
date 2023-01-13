@@ -3,7 +3,10 @@
 #site-header {
   background-color: $clr-primary;
   color: white;
-  justify-content: space-between;
+
+  .container {
+    justify-content: space-between;
+  }
 
   a {
     color: white;
@@ -13,12 +16,30 @@
   #site-title {
     font-size: 1.6rem;
     font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 0.5rem;
+
+      svg {
+        fill: white;
+      }
+    }
+
+    &:hover {
+      background-color: $clr-hover;
+    }
   }
 
   #site-menu {
     button {
       @include breakpoint($header-min) {
-        display: none;
+        // display: none;
+        //  working on https://alpinetoolbox.com/examples/navbar
       }
     }
 
@@ -32,7 +53,7 @@
           display: flex;
 
           &:hover {
-            background-color: red;
+            background-color: $clr-hover;
           }
         }
       }
