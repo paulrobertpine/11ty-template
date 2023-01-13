@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ metadata.language }}">
-
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href={{ "css/style.css" | url }}>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href={{
+      "css/style.css" | url
+    }}>
     <script src="/js/alpine.js" defer></script>
     <title>{{ title }} | {{ metadata.sitetitle }}</title>
   </head>
 
   <body>
-
-    <header id="site-header" class="pad flex">
-      <a id="site-title" href="/">{{ metadata.sitetitle }}</a>
-
-      <nav id="site-menu">
-        <button class="toggle">Menu</button>
-        <ol class="flex">
-          <li>
-            <a href="#">One</a>
-          </li>
-          <li>
-            <a href="#">Two</a>
-          </li>
-          <li>
-            <a href="#">Three</a>
-          </li>
-          <li>
-            <a href="#">Four</a>
-          </li>
-          <li>
-            <a href="#">Five</a>
-          </li>
-        </ol>
-      </nav>
-    </header>
+    {% include "header.njk" %}
 
     <main id="site-main" class="container pad">
       <section class="reading">
@@ -44,14 +21,6 @@
       </section>
     </main>
 
-    <footer id="site-footer" class="pad">
-      <p x-data="{ date: new Date() }">
-      &copy; <span x-text="date.getFullYear()">YYYY</span>
-        <a href="/">
-          {{ metadata.sitetitle }}
-        </a>
-      </p>
-    </footer>
-
+    {% include "footer.njk" %}
   </body>
 </html>
