@@ -23,3 +23,21 @@
 .debug {
   border: 1px solid red;
 }
+
+.hide {
+  @include hide;
+}
+
+.hide-mobile {
+  display: none;
+
+  @include breakpoint($header-min) {
+    display: flex;
+  }
+}
+
+.show-mobile {
+  @include breakpoint($header-min) {
+    display: none;
+  }
+}

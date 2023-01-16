@@ -2,7 +2,7 @@
 $max-width: 1200px;
 $reading-width: 700px;
 $min-width: 300px;
-$header-min: 460px;
+$header-min: 530px;
 
 // colours
 $clr-primary: hsl(210, 100%, 30%);
@@ -31,4 +31,14 @@ $font-max: 18px;
 
 @function strip-unit($value) {
   @return calc($value / 1px);
+}
+
+@mixin hide {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

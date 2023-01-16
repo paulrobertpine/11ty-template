@@ -29,10 +29,6 @@
         fill: white;
       }
     }
-
-    &:hover {
-      background-color: $clr-hover;
-    }
   }
 
   #site-menu {
@@ -51,9 +47,10 @@
           padding: 0.5rem 1rem;
           font-weight: bold;
           display: flex;
+          border-bottom: 3px solid transparent;
 
           &:hover {
-            background-color: $clr-hover;
+            border-bottom: 3px solid $clr-hover;
           }
         }
       }
