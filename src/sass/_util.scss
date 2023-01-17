@@ -41,3 +41,17 @@
     display: none;
   }
 }
+
+.external {
+  // display: inline-flex;
+  // align-items: center;
+
+  &::after {
+    content: url("../img/svg/external-link-line.svg");
+    //  how to style it?
+    // display: inline-block;
+    // width: 1em;
+    // height: 1em;
+    // fill: red;
+  }
+}
