@@ -15,6 +15,9 @@ $clr-text: hsl(0, 0%, 20%);
 $font-min: 14px;
 $font-max: 18px;
 
+// other
+$transition-speed: 300ms;
+
 // mixins
 @mixin breakpoint($pixels) {
   @media only screen and (min-width: $pixels) {

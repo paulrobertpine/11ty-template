@@ -35,3 +35,19 @@ ul {
 a {
   color: $clr-primary;
 }
+
+button {
+  background-color: white;
+  color: $clr-primary;
+  border: 1px solid $clr-primary;
+  font-weight: bold;
+  // font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all $transition-speed;
+
+  &:hover {
+    background-color: $clr-primary;
+    color: white;
+  }
+}
