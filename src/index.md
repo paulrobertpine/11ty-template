@@ -14,7 +14,7 @@ Here is a paragraph. Please [see this link](https://google.ca) for things.
     <span x-text="count"></span>
 </div>
 
-Here is paragraph two. Some **bold text** is here oh yeah. Here is [an external link](#){.external}. Here is a [link to a PDF](#).
+Here is paragraph two. Some **bold text** is here oh yeah. Here is [an external link](#){.external}. Here is a [link to a PDF](#){.pdf}.
 
 ### Heading Three
 

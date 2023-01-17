@@ -45,3 +45,17 @@ $transition-speed: 300ms;
   white-space: nowrap;
   width: 1px;
 }
+
+@mixin icon-after($iconURL, $color: $clr-primary) {
+  display: inline-flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    mask: url($iconURL) no-repeat center;
+    mask-size: 90%;
+    background-color: $color;
+  }
+}

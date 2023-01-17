@@ -43,15 +43,9 @@
 }
 
 .external {
-  // display: inline-flex;
-  // align-items: center;
+  @include icon-after("../img/svg/external-link-line.svg");
+}
 
-  &::after {
-    content: url("../img/svg/external-link-line.svg");
-    //  how to style it?
-    // display: inline-block;
-    // width: 1em;
-    // height: 1em;
-    // fill: red;
-  }
+.pdf {
+  @include icon-after("../img/svg/file-pdf-fill.svg", red);
 }
