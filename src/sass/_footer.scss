@@ -5,7 +5,8 @@
   color: $clr-primary-text;
 
   .container {
-    justify-content: right;
+    display: flex;
+    justify-content: flex-end;
   }
 
   a {
