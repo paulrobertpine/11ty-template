@@ -46,7 +46,7 @@ $transition-speed: 300ms;
   width: 1px;
 }
 
-@mixin icon-after($iconURL, $color: $clr-primary) {
+@mixin icon-after($iconURL, $color: currentColor) {
   display: inline-flex;
   align-items: center;
 
@@ -57,5 +57,6 @@ $transition-speed: 300ms;
     mask: url($iconURL) no-repeat center;
     mask-size: 90%;
     background-color: $color;
+    margin-left: 0.25rem;
   }
 }

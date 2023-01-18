@@ -1,6 +1,9 @@
 @use "theme" as *;
 
 #site-main {
+  min-width: $reading-width;
+  padding: 1rem 0;
+
   a {
     font-weight: bold;
   }
