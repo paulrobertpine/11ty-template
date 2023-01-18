@@ -3,6 +3,7 @@
 .container {
   margin: 0 auto;
   max-width: $max-width;
+  padding: 1rem;
 }
 
 .reading {
@@ -48,4 +49,8 @@
 
 .pdf {
   @include icon-after("../img/svg/file-pdf-fill.svg", red);
+}
+
+.logo {
+  @include icon-before("../img/svg/plant-fill.svg");
 }

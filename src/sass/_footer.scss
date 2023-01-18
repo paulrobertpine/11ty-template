@@ -2,16 +2,15 @@
 
 #site-footer {
   background-color: $clr-primary;
-  color: white;
-  text-align: right;
+  color: $clr-primary-text;
 
-  a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+  .container {
+    justify-content: right;
   }
 
-  .copy {
-    padding: 0.5rem 1rem;
+  a {
+    color: currentColor;
+    font-weight: bold;
+    text-decoration: none;
   }
 }
