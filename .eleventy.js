@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
   })
 
   return {
-    pathPrefix: "/public/",
+    // pathPrefix: "/public/",
     dir: {
       input: "src",
       output: "public",
