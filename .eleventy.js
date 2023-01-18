@@ -10,16 +10,17 @@ const markdownItOptions = {
 
 const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
 
-module.exports = function (config) {
-  config.setLibrary("md", markdownLib)
-  config.addWatchTarget("./src/sass")
-  config.addPassthroughCopy("./src/css")
-  config.addPassthroughCopy("./src/img")
-  config.addPassthroughCopy({
+module.exports = function (eleventyConfig) {
+  eleventyConfig.setLibrary("md", markdownLib)
+  eleventyConfig.addWatchTarget("./src/sass")
+  eleventyConfig.addPassthroughCopy("./src/css")
+  eleventyConfig.addPassthroughCopy("./src/img")
+  eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/cdn.js": "./js/alpine.js",
   })
 
   return {
+    pathPrefix: "/public/",
     dir: {
       input: "src",
       output: "public",

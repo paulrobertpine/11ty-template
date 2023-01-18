@@ -1,8 +1,8 @@
 <footer id="site-footer" class="pad">
   <p class="copy" x-data="{ date: new Date() }">
     &copy; <span x-text="date.getFullYear()">YYYY</span>
-    <a href="/">
-      {{ metadata.sitetitle }}
+    <a href={{ "/" | url }}>
+      {{ meta.sitetitle }}
     </a>
   </p>
 </footer>
