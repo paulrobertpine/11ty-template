@@ -30,10 +30,8 @@
 }
 
 .hide-mobile {
-  @include hide;
-
-  @include breakpoint($header-min) {
-    display: flex;
+  @include breakpoint($header-min, true) {
+    @include hide;
   }
 }
 
@@ -56,6 +54,6 @@
   @include icon-before("../img/svg/plant-fill.svg");
 }
 
-.hamburger {
+.hamburger-icon {
   @include icon-before("../img/svg/menu-line.svg");
 }

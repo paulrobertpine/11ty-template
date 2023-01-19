@@ -2,7 +2,7 @@
 $max-width: 1200px;
 $reading-width: 700px;
 $min-width: 300px;
-$header-min: 530px;
+$header-min: 550px;
 
 // colours
 $clr-primary: hsl(153, 56%, 23%);
@@ -22,9 +22,15 @@ $transition-speed: 300ms;
 $radius: 5px;
 
 // mixins
-@mixin breakpoint($pixels) {
-  @media only screen and (min-width: $pixels) {
-    @content;
+@mixin breakpoint($pixels, $mobile-only: false) {
+  @if $mobile-only {
+    @media only screen and (max-width: ($pixels - 1)) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $pixels) {
+      @content;
+    }
   }
 }
 
