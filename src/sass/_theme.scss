@@ -19,6 +19,8 @@ $font-max: 18px;
 // other
 $transition-speed: 300ms;
 
+$radius: 5px;
+
 // mixins
 @mixin breakpoint($pixels) {
   @media only screen and (min-width: $pixels) {

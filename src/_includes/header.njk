@@ -1,31 +1,32 @@
 <header id="site-header">
-  <section class="container flex">
+
+  <nav id="site-menu" class="container" x-data="{ open: false }">
+
     <a id="site-title" class="logo" href={{ "/" | url }}>
       {{ meta.sitetitle }}
     </a>
 
-    <nav id="site-menu" x-data="{ open: false }""
-      x-init=" $watch('open', value=> console.log(value))">
-      <button @click.prevent="open = !open" type="button" class="show-mobile">
+    <button @click.prevent="open = !open" type="button" class="show-mobsile hamburger">
         Menu
       </button>
-      <ol class="flex" :class="open ? '' : 'hide-mobile'">
-        <li>
-          <a href={{ "/one" | url }}>One</a>
-        </li>
-        <li>
-          <a href={{"/two" | url }}>Two</a>
-        </li>
-        <li>
-          <a href="#">Three</a>
-        </li>
-        <li>
-          <a href="#">Four</a>
-        </li>
-        <li>
-          <a href="#">Five</a>
-        </li>
-      </ol>
-    </nav>
-  </section>
+
+    <ol :class="open ? '' : 'hide-mosbile'">
+      <li>
+        <a href={{ "/one" | url }}>One</a>
+      </li>
+      <li>
+        <a href={{"/two" | url }}>Two</a>
+      </li>
+      <li>
+        <a href="#">Three</a>
+      </li>
+      <li>
+        <a href="#">Four</a>
+      </li>
+      <li>
+        <a href="#">Five</a>
+      </li>
+    </ol>
+  </nav>
+
 </header>

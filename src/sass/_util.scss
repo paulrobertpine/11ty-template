@@ -43,6 +43,7 @@
   }
 }
 
+// link icons
 .external {
   @include icon-after("../img/svg/external-link-line.svg");
 }
@@ -53,4 +54,8 @@
 
 .logo {
   @include icon-before("../img/svg/plant-fill.svg");
+}
+
+.hamburger {
+  @include icon-before("../img/svg/menu-line.svg");
 }
