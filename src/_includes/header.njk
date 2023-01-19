@@ -6,11 +6,11 @@
       {{ meta.sitetitle }}
     </a>
 
-    <button @click.prevent="open = !open" type="button" class="show-mobsile hamburger">
+    <button @click.prevent="open = !open" type="button" class="only-mobile hamburger">
         Menu
       </button>
 
-    <ol :class="open ? '' : 'hide-mosbile'">
+    <ol :class="open ? '' : 'hide-mobile'" x-transition>
       <li>
         <a href={{ "/one" | url }}>One</a>
       </li>

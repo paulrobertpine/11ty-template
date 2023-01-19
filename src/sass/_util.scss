@@ -30,16 +30,16 @@
 }
 
 .hide-mobile {
-  display: none;
+  @include hide;
 
   @include breakpoint($header-min) {
     display: flex;
   }
 }
 
-.show-mobile {
+.only-mobile {
   @include breakpoint($header-min) {
-    display: none;
+    display: none !important;
   }
 }
 
