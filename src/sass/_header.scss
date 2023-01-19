@@ -69,6 +69,10 @@
             border-bottom: 3px solid $clr-hover;
           }
         }
+
+        [aria-current]:not([aria-current="false"]) {
+          border-bottom: 3px solid $clr-hover;
+        }
       }
 
       @include breakpoint($header-min) {
@@ -76,7 +80,7 @@
         justify-content: space-between;
 
         li a {
-          padding: 0.5rem 1rem;
+          padding: 0.5rem;
         }
       }
     }

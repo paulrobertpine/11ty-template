@@ -6,27 +6,26 @@
       {{ meta.sitetitle }}
     </a>
 
-    <button @click.prevent="open = !open" type="button" class="only-mobile hamburger-icon">
-        Menu
-      </button>
+    <button @click.prevent="open = !open" type="button" class="only-mobile hamburger-icon">Menu</button>
 
     <ol :class="open ? '' : 'hide-mobile'" x-transition>
-      <li>
-        <a href={{ "/one" | url }}>One</a>
-      </li>
-      <li>
-        <a href={{"/two" | url }}>Two</a>
-      </li>
-      <li>
-        <a href="#">Three</a>
-      </li>
-      <li>
-        <a href="#">Four</a>
-      </li>
-      <li>
-        <a href="#">Five</a>
-      </li>
+
+      {% set currentUrl = page.url %}
+
+      {% for link in collections.l2page %}
+        <li>
+          <a
+            {% if currentUrl === link.url %}
+              aria-current="page"
+            {% endif %}
+            href="{{ link.url }}">
+            {{ link.data.title }}
+          </a>
+        </li>
+      {% endfor %}
+
     </ol>
+
   </nav>
 
 </header>
