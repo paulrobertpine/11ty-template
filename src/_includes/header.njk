@@ -8,7 +8,7 @@
 
     <button @click.prevent="open = !open" type="button" class="only-mobile hamburger-icon">Menu</button>
 
-    <ol :class="open ? '' : 'hide-mobile'" x-transition>
+    <ol :class="open ? '' : 'hide-mobile'">
 
       {% set currentUrl = page.url %}
 
@@ -27,5 +27,4 @@
     </ol>
 
   </nav>
-
 </header>
