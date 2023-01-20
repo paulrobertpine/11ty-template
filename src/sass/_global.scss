@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 body {
   color: $clr-text;
   line-height: 1.5;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-sans;
 }
 
 h1,
@@ -32,7 +33,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  border-bottom: 1px solid $clr-bg;
+  // border-bottom: 1px solid $clr-bg;
 }
 
 h3 {
@@ -41,6 +42,33 @@ h3 {
 
 a {
   color: $clr-primary;
+}
+
+ul,
+ol {
+  padding: 0 1rem;
+
+  li::marker {
+    color: $clr-primary;
+  }
+}
+
+blockquote {
+  border-left: 5px solid $clr-primary;
+  font-size: 1.2rem;
+  color: $clr-primary;
+
+  p {
+    // background-color: yellow;
+    padding: 1rem;
+
+    &::before {
+      content: "“";
+      margin-right: 0.2rem;
+      font-size: 2rem;
+      line-height: 0;
+    }
+  }
 }
 
 // button {

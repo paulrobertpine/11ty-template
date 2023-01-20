@@ -7,12 +7,13 @@ Here is a paragraph. Please [see this link](https://google.ca) for things.
 
 ## Heading Two
 
-Here is paragraph two. Some **bold text** is here oh yeah. Here is [an external link](#){.external}. Here is a [link to a PDF](#){.pdf}.
+Here is paragraph two. Some **bold text** is here.
 
-<div x-data="{ count: 0 }">
-    <button x-on:click="count++">Increment</button>
-    <span x-text="count"></span>
-</div>
+Some link styles:
+
+- An [external link](#){.external}
+- A [link to a PDF](#){.pdf}
+- An [email link](#){.email}
 
 ### Heading Three
 
@@ -20,7 +21,7 @@ Here is paragraph three. Some _italicized text_ is here uh huh.
 
 A person said something very important. They said:
 
-> Sha na na na na sha na na na na na
+> Sha na na na na sha na na na na na.
 
 ## Heading Two
 

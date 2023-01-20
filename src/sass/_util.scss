@@ -50,6 +50,10 @@
   @include icon-after("../img/svg/file-pdf-fill.svg", red);
 }
 
+.email {
+  @include icon-after("../img/svg/mail-line.svg");
+}
+
 .logo {
   @include icon-before("../img/svg/plant-fill.svg");
 }
