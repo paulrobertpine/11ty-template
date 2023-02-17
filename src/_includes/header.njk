@@ -2,7 +2,8 @@
 
   <nav id="site-menu" class="container" x-data="{ open: false }">
 
-    <a id="site-title" class="logo" href={{ "/" | url }}>
+    <a id="site-title" href={{ "/" | url }}>
+      {% include "logo.svg" %}
       {{ meta.sitetitle }}
     </a>
 

@@ -16,7 +16,7 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-img": "^2.0.1",
     "alpinejs": "^3.10.5",
     "lightningcss-cli": "^1.18.0",

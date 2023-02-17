@@ -23,15 +23,21 @@
 
     #site-title {
       grid-area: title;
+      display: flex;
+      align-items: center;
+      // flex-grow: 1;
       font-size: 1.6rem;
       font-weight: bold;
       margin-right: 0.5rem;
 
-      &::before {
-        mask-size: 120%;
-        width: 1.2em;
-        height: 1.2em;
+      svg {
+        fill: currentColor;
+        width: 2rem;
         margin-right: 0.5rem;
+      }
+
+      &:hover {
+        color: yellow;
       }
     }
 
@@ -42,7 +48,6 @@
       border: 1px solid $clr-primary-text;
       border-radius: $radius;
       background-color: $clr-primary-text;
-      // font-size: 0.8rem;
       transition: border $transition-speed;
       max-width: 5rem;
       justify-self: end;
