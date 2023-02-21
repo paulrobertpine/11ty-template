@@ -6,8 +6,10 @@
   }
 
   a {
+    border-bottom: 1px currentColor dotted;
+
     &:hover {
-      background-color: $clr-primary-text;
+      border-bottom: 1px currentColor solid;
     }
   }
 }

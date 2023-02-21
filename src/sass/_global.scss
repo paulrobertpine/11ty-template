@@ -42,6 +42,7 @@ h3 {
 
 a {
   color: $clr-primary;
+  text-decoration: none;
 }
 
 ul,
@@ -60,13 +61,23 @@ blockquote {
 
   p {
     // background-color: yellow;
+    display: flex;
+    align-items: center;
     padding: 1rem;
+
+    &::before,
+    &::after {
+      // margin-right: 0.2rem;
+      font-size: 1.5rem;
+      line-height: 0;
+    }
 
     &::before {
       content: "“";
-      margin-right: 0.2rem;
-      font-size: 2rem;
-      line-height: 0;
+    }
+
+    &::after {
+      content: "”";
     }
   }
 }
