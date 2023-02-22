@@ -3,7 +3,7 @@ title: Hello 11ty
 layout: "base.njk"
 ---
 
-Here is a paragraph. Please [see this link](https://google.ca) for things.
+Here is a paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Please [see this link](https://google.ca) for things. Placeat illum praesentium numquam maiores itaque sunt! Porro a, culpa maiores sunt quo voluptates excepturi saepe expedita nobis est doloremque, cupiditate rem.
 
 ## Heading Two
 
